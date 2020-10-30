@@ -1,9 +1,10 @@
+
 # DOCUMENTAÇÃO PROJETO DO ABAJUR
 
 ## 1. Introdução
 O presente trabalho tem como finalidade pesquisar, discutir, elaborar, desenvolver e publicar um projeto em grupo. O qual consiste em criar um esquema elétrico para realizar determinadas tarefas, as quais foram discutidas pela equipe. Para a criação do mesmo foi utilizado ferramentas online gratuitas e vídeo aulas disponibilizadas na plataforma Moodle.
 ## 2. Objetivos
-
+O projeto final consiste em construir um esquema elétrico o qual deve acender uma lâmpada quando o usuário bater 2 palmas e apagar a lâmpada quando o usuário bater 1 palma. Para a realização foi feito a elaboração do sistema na ferramenta Tinkercad, adaptando a ideia com os recursos do site.
 ## 3. Materiais utilizados
 ### Lista de Materiais
  - Arduino Uno R3;
