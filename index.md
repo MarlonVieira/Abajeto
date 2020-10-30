@@ -4,7 +4,7 @@ You can use the [editor on GitHub](https://github.com/MarlonVieira/MarlonVieira.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### 1. Introdução
+## 1. Introdução
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
