@@ -1,4 +1,4 @@
-## DOCUMENTAÇÃO DE PROJETO DO ABAJUR
+# DOCUMENTAÇÃO DE PROJETO DO ABAJUR
 
 You can use the [editor on GitHub](https://github.com/MarlonVieira/MarlonVieira.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
@@ -28,19 +28,19 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### 2. Objetivos
+## 2. Objetivos
 
 
 
-### 3. Materiais utilizados
+## 3. Materiais utilizados
 
-## Lista de Materiais
+### Lista de Materiais
 
-### 4. Esquema Elétrico
+## 4. Esquema Elétrico
 
-### 5. Código
+## 5. Código
 
-### 6. Resultados
+## 6. Resultados
 
-### 7. Desafios encontrados
+## 7. Desafios encontrados
 
