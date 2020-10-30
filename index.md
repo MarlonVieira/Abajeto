@@ -1,42 +1,68 @@
+
 # DOCUMENTAÇÃO PROJETO DO ABAJUR
 
-You can use the [editor on GitHub](https://github.com/MarlonVieira/MarlonVieira.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
 ## 1. Introdução
-
+O presente trabalho tem como finalidade pesquisar, discutir, elaborar, desenvolver e publicar um projeto em grupo. O qual consiste em criar um esquema elétrico para realizar determinadas tarefas, as quais foram discutidas pela equipe. Para a criação do mesmo foi utilizado ferramentas online gratuitas e vídeo aulas disponibilizadas na plataforma Moodle.
 ## 2. Objetivos
 
 ## 3. Materiais utilizados
-
 ### Lista de Materiais
+ - Arduino Uno R3;
+ - Lâmpada;
+ - Sensor de distância ultrassônico ;
+ - 6 Fios.
+
+### Lista de Ferramentas
+ - Tinkercad;
+ - StackEdit;
+ - GitHub.
 
 ## 4. Esquema Elétrico
 
 ## 5. Código
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
 ```markdown
-Syntax highlighted code block
+int palmas = 250;
+int som;
+int status = 0;
+long readUltrasonicDistance(int triggerPin, int echoPin)
+{
+  pinMode(triggerPin, OUTPUT);
+  digitalWrite(triggerPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(triggerPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(triggerPin, LOW);
+  pinMode(echoPin, INPUT);
+  return pulseIn(echoPin, HIGH);
+}
 
-# Header 1
-## Header 2
-### Header 3
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(2, INPUT);
+  pinMode(13, OUTPUT);
+}
 
-- Bulleted
-- List
+void loop()
+{
+  sonicDistance(2, A1);
+  Serial.print("Valor que o microfone esta me enviando: ");
+  Serial.println(som);
+  
+  if ((som > palmas) && (status == 0))
+  {
+    digitalWrite(13, HIGH);
+    status = 1;
+    delay(1000);
+  }
+  else if ((som > palmas) && (status == 1))
+  {
+    digitalWrite(13, LOW);
+    status = 0;
+    delay(1000);
+}
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ## 6. Resultados
 
