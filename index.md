@@ -68,6 +68,7 @@ O projeto final consiste em construir um esquema elétrico o qual deve acender u
 ```
 
 ## 6. Resultados
+{{> youtube VIDEO <}}
 
 ## 7. Desafios encontrados
 
