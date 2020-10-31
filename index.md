@@ -12,7 +12,8 @@
    
 ## 3. Materiais utilizados
 ### Lista de Materiais 
-   #### Adaptação:
+
+#### Adaptação:
  - Arduino Uno R3;
  - Placa de ensaio pequena;
  - Lâmpada;
@@ -42,6 +43,7 @@
 
 ### Adaptação:
 ```markdown
+
       //Criando duas constantes para poupar memória
 
       define POT A2; // Constante para indicar a entrada analógica do potenciômetro
