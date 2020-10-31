@@ -42,37 +42,37 @@
 
 ### Adaptação:
 ```markdown
-   //Criando duas constantes para poupar memória
+      //Criando duas constantes para poupar memória
 
-   define POT A2; // Constante para indicar a entrada analógica do potenciômetro
-   define LAMP 13; // Constante para indicar a entrada digital da lâmpada
+      define POT A2; // Constante para indicar a entrada analógica do potenciômetro
+      define LAMP 13; // Constante para indicar a entrada digital da lâmpada
 
-   int valor = 0;
+      int valor = 0;
 
-   void setup()
-   {
-      Serial.begin(9600);
-      pinMode(POT, INPUT);
-      pinMode(LAMP, OUTPUT);
-   }
+      void setup()
+      {
+         Serial.begin(9600);
+         pinMode(POT, INPUT);
+         pinMode(LAMP, OUTPUT);
+      }
 
-   void loop()
-   {
-     valor = analogRead(POT); // Variavel recebe o valor do potenciômetro   
+      void loop()
+      {
+        valor = analogRead(POT); // Variavel recebe o valor do potenciômetro   
 
-     if(valor < 250)
-     {
-        digitalWrite(LAMP, LOW); // Desliga a lâmpada caso o potenciômetro esteja abaixo de 250
-        delay(800); // Delay de 0.8 segundos
-     }
+        if(valor < 250)
+        {
+           digitalWrite(LAMP, LOW); // Desliga a lâmpada caso o potenciômetro esteja abaixo de 250
+           delay(800); // Delay de 0.8 segundos
+        }
 
-     else
-     {
-        digitalWrite(LAMP, HIGH); // Caso contrário liga a lâmpada 
-        delay(800); // Delay de 0.8 segundos
-     }
-      Serial.println(valor);
-   }
+        else
+        {
+           digitalWrite(LAMP, HIGH); // Caso contrário liga a lâmpada 
+           delay(800); // Delay de 0.8 segundos
+        }
+         Serial.println(valor);
+      }
 ```
 
 ## 6. Resultados
