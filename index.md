@@ -76,11 +76,11 @@ void loop()
 
 ## 6. Resultados
 O vídeo de demonstração do projeto original pode ser visto em:
-{{< youtube gwvSn29RevI >}}
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://www.youtube.com/watch?v=gwvSn29RevI&feature=youtu.be)
 Vídeo retirado do canal Bit a Bit.
 
 O vídeo de demonstração do projeto adaptado pode ser visto em:
-{{< youtube dNpyp3jWUP4 >}}
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://www.youtube.com/watch?v=dNpyp3jWUP4&feature=youtu.be)
 
 ## 7. Desafios encontrados
 
