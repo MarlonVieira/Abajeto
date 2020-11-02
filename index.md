@@ -12,14 +12,12 @@
    
 ## 3. Materiais utilizados
 ### Lista de Materiais 
-
 #### Adaptação:
  - Arduino Uno R3;
  - Placa de ensaio pequena;
  - Lâmpada;
  - Potenciômetro;
  - 7 Fios.
-
 #### Projeto Original:
  - Arduino Uno R3;
  - Placa de ensaio pequena;
@@ -43,42 +41,46 @@
 
 ### Adaptação:
 ```markdown
+//Criando duas constantes para poupar memória
 
-      //Criando duas constantes para poupar memória
+define POT A2; // Constante para indicar a entrada analógica do potenciômetro
+define LAMP 13; // Constante para indicar a entrada digital da lâmpada
 
-      define POT A2; // Constante para indicar a entrada analógica do potenciômetro
-      define LAMP 13; // Constante para indicar a entrada digital da lâmpada
+int valor = 0;
 
-      int valor = 0;
+void setup()
+{
+   Serial.begin(9600);
+   pinMode(POT, INPUT);
+   pinMode(LAMP, OUTPUT);
+}
 
-      void setup()
-      {
-         Serial.begin(9600);
-         pinMode(POT, INPUT);
-         pinMode(LAMP, OUTPUT);
-      }
+void loop()
+{
+  valor = analogRead(POT); // Variavel recebe o valor do potenciômetro   
+   
+  if(valor < 250)
+  {
+     digitalWrite(LAMP, LOW); // Desliga a lâmpada caso o potenciômetro esteja abaixo de 250
+     delay(800); // Delay de 0.8 segundos
+  }
 
-      void loop()
-      {
-        valor = analogRead(POT); // Variavel recebe o valor do potenciômetro   
-
-        if(valor < 250)
-        {
-           digitalWrite(LAMP, LOW); // Desliga a lâmpada caso o potenciômetro esteja abaixo de 250
-           delay(800); // Delay de 0.8 segundos
-        }
-
-        else
-        {
-           digitalWrite(LAMP, HIGH); // Caso contrário liga a lâmpada 
-           delay(800); // Delay de 0.8 segundos
-        }
-         Serial.println(valor);
-      }
+  else
+  {
+     digitalWrite(LAMP, HIGH); // Caso contrário liga a lâmpada 
+     delay(800); // Delay de 0.8 segundos
+  }
+   Serial.println(valor);
+}
 ```
 
 ## 6. Resultados
-{{> youtube VIDEO <}}
+O vídeo de demonstração do projeto original pode ser visto em:
+{{< youtube gwvSn29RevI >}}
+Vídeo retirado do canal Bit a Bit.
+
+O vídeo de demonstração do projeto adaptado pode ser visto em:
+{{< youtube dNpyp3jWUP4 >}}
 
 ## 7. Desafios encontrados
 
