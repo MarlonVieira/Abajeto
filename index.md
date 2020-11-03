@@ -76,6 +76,7 @@ O projeto final consiste em construir um esquema elétrico o qual deve acender u
 ## 6. Resultados
 O vídeo de demonstração do projeto original pode ser visto em:
 [![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://www.youtube.com/watch?v=gwvSn29RevI)
+
 Vídeo retirado do canal Bit a Bit.
 
 O vídeo de demonstração do projeto adaptado pode ser visto em:
